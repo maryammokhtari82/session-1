@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #5b5b5b;
+  h4 {
+    font-family: Roboto;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 200px;
+  }
+}
