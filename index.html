@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>session-1</title>
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- #region  wrapper-->
@@ -18,7 +19,51 @@
         </nav>
       </div>
       <!-- #endregion menu-->
+      <!-- #region slider-->
+      <div class="slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./src/images/1978-cadillac-seville.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/images/1978-cadillac-seville.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/images/1978-cadillac-seville.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/images/1978-cadillac-seville.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- #endregion slider-->
     </div>
     <!-- #endregion wrapper-->
+    <script src="./src/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
